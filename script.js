@@ -1,6 +1,5 @@
 function encriptar(){
 	var  frase = document.getElementById("textoEncriptado").value.toLowerCase();	
-
 	var  textoEncriptado = frase.replace(/e/img, "enter");
 	var  textoEncriptado = textoEncriptado.replace(/i/img, "imes");
 	var  textoEncriptado = textoEncriptado.replace(/a/img, "ai");
@@ -11,7 +10,6 @@ function encriptar(){
 }
 function desencriptador(){
 	var  frase = document.getElementById("textoEncriptado").value.toLowerCase();	
-
 	var  textoEncriptado = frase.replace(/enter/img, "e");
 	var  textoEncriptado = textoEncriptado.replace(/imes/img, "i");
 	var  textoEncriptado = textoEncriptado.replace(/ai/img, "a");
