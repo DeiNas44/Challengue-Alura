@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Codificador</title>
+	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">	
+</head>
+<body>
+	<header class="header">
+		<nav>
+			<img src="imagenes/vectorHeader.png" class="logoHeader" alt="LogoAlura">
+			<ul class="lista">
+				<li><h1><p class="tipado">Encriptador de Texto</p></h1></li>
+				<li><img src="imagenes/logoBerserk.png" alt="LogoBerserk" class="logoBerserk"></li>
+			</ul>	
+			
+			
+		</nav>
+		
+	</header>
+	<main class="cuerpo-principal">
+		<section class="columna-1">
+			
+			<textarea cols="30" rows="10"  id="textoEncriptado" class="textoEncriptado" placeholder="Ingrese el texto aquí"></textarea>
+			<div class="parrafo">
+				<p><img src="imagenes/vector.png" alt="Logo" id="logoAviso">Solo letras minúsculas y sin carácteres</p>
+			</div>	
+			<div class="botones">
+				<button id="botonEncriptado" class="botonEncriptador">Encriptar</button>
+				
+				<button id="botonDesencriptado" class="botonDesencriptador">Desencriptar</button>
+			</div>
+		</section>
+		<section class="columna-2">	
+			
+			<textarea cols="30" rows="10" name="resultado" id="textoEspecial" class="textoEspecial" placeholder="Aquí le saldra el texto escrito"></textarea>
+
+			<div class="botonesCopiar">
+				
+				<button id="botonCopiar" class="botonCopiar">Copiar</button>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">Realizado por José Medina - 2023
+
+		<div>
+			<a href="https://github.com/DeiNas44?tab=packages"><img src="imagenes/1.png" class="imagenGit" alt="logoGitHub"></a>
+			<a href="https://www.linkedin.com/in/jose-alberto-medina-ramoni-3946ab258/"><img src="imagenes/2.png" class="imagenlinkedin"></a>
+		</div>
+	</footer>
+	<script>
+		var boton = document.querySelector("#botonEncriptado")
+		boton.onclick = encriptar;
+		var boton2 = document.querySelector("#botonDesencriptado")
+		boton2.onclick = desencriptador;
+		var boton3 = document.querySelector("#botonCopiar")
+		boton3.onclick = copiar;
+	</script>
+</body>
+</html>

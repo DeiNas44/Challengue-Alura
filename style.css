@@ -1,0 +1,178 @@
+body{
+	font-family: 'Merriweather', serif;
+	/*background: #3A3938 ;*/
+	background: #3A3938;
+}
+.header{
+	width: 100%;
+	background: linear-gradient(45deg, Black,darkred);
+	min-height: 110px;
+	text-align: center;
+}
+.logoHeader{
+	width: 40px;	
+	float: left;
+    padding: 10px 20px;
+}
+.lista li{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.logoBerserk{
+	width: 40px;	
+}
+.tipado{
+	text-align: center;
+	color: white;
+	font-size: 70px;	
+}
+.cuerpo-principal{
+	
+	width: 90%;
+	margin: 20px auto;
+	display: flex;
+	
+	justify-content: space-between;
+}
+.columna-1{
+	
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.textoEncriptado{
+	background: #CAC5C3 ;
+	font-size:32px;
+	color:  darkred;
+	border-radius: 15px 15px 15px 15px;
+	
+	box-shadow: 5px 5px 15px 5px rgb(255 0 0 / 60%);
+	border: 5px double;
+	
+
+}
+.parrafo{
+	margin: 10px auto;
+	opacity: 80%;
+}
+.botones{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.botonEncriptador{
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid white;	
+	border-radius: 15px 15px 15px 15px ;
+	font-size: 16px;
+	width: 30%;
+	height: 60px;
+	margin-right: 10px;
+}
+.botonEncriptador:hover{
+	background: darkred;
+	transition: 400ms;
+	transform: scale(1.1);
+}
+.botonDesencriptador{
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid white;	
+	border-radius: 15px 15px 15px 15px;
+	width: 30%;
+	height: 60px;
+}
+.botonDesencriptador:hover{
+	background: darkred;
+	transition: 400ms;
+	transform: scale(1.1);
+}
+.columna-2{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.textoEspecial{
+	background: #CAC5C3 ;
+	font-size:32px;
+	color:  darkred;
+	border-radius: 15px 15px 15px 15px;
+	
+	box-shadow: 5px 5px 15px 5px rgb(255 0 0 / 60%);
+	border: 5px double;
+}
+::placeholder 
+{ color: white; } 
+
+.botonesCopiar{
+	margin: 20px auto;
+}
+.botonCopiar{
+	display: inherit;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	width: 100%;
+	border: 1px solid white;	
+	border-radius: 15px 15px 15px 15px;
+
+}	
+.botonCopiar:hover{
+	background: darkred;
+	transition: 400ms;
+	transform: scale(1.1);	
+}
+.footer{
+
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	padding: 20px;
+	background: black;
+	color: white;
+}
+.imagenGit{
+	width: 25px;
+	background: black;
+}
+.imagenGit:hover{
+	transition: 400ms;
+	width: 35px;
+
+}
+.imagenlinkedin{
+	width: 25px;
+}
+.imagenlinkedin:hover{
+	transition: 400ms;
+	width: 35px;
+}
+
+@media screen and (max-width:  480px){
+
+	.tipado{
+		font-size: 50px;
+	}
+
+	.cuerpo-principal{
+		flex-direction: column;
+		padding: 0px;
+	}
+	.columna-2, .columna-1{
+		width: 90%;
+		margin: 5px auto;
+	}
+
+	.textoEncriptado, .textoEspecial{
+		width: 96%;
+	}
+	.botonEncriptador, .botonDesencriptador{
+		font-size: 10px;
+	}
+}
